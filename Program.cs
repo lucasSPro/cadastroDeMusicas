@@ -37,7 +37,23 @@ namespace CAD.Musicas
         }
 
         private static string ObterOpcaoUsuario(){
-            return "X";
+            Console.WriteLine();
+            Console.WriteLine("CAD musica seja bem vindo!");
+            Console.WriteLine("Informe a opção desejada:");
+
+            Console.WriteLine("1 - Listar Musicas");
+            Console.WriteLine("2 - Inserir nova Música");
+            Console.WriteLine("3 - Alualizar Música");
+            Console.WriteLine("4 - Excluir Música");
+            Console.WriteLine("5 - Visializar detalhe da Música");
+            Console.WriteLine("C - Limpar tela");
+            Console.WriteLine("X - Sair");
+            Console.WriteLine();
+            
+            string opcaoUsuario =  Console.ReadLine().ToUpper();
+            Console.WriteLine();
+            
+            return opcaoUsuario;
         }
         private static void ListarMusicas(){
             Console.WriteLine("Listar Musicas");
