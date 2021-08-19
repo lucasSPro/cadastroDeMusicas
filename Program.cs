@@ -40,7 +40,14 @@ namespace CAD.Musicas
             return "X";
         }
         private static void ListarMusicas(){
-            
+            Console.WriteLine("Listar Musicas");
+            var lista = repositorio.Lista();
+            if(lista.Count == 0){
+                Console.WriteLine("Nenhme musica cadastrada.");
+            }
+            foreach(var musica in lista){
+                Console.WriteLine("#ID {0}: - {1}", musica.retornaIdMusica(), musica.RetornaNomeMusica());
+            }
         }
         private static void InserirMusica(){
 
