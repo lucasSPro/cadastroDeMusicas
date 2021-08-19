@@ -25,6 +25,7 @@ namespace CAD.Musicas
             retorno += "Nome :" + this.Nome + Environment.NewLine;
             retorno += "Artista :" + this.Artista + Environment.NewLine;
             retorno += "Ano de lançamento :" + this.Ano;
+            retorno += "Excluido: " + this.Excluido;
             return retorno;
         }
 
