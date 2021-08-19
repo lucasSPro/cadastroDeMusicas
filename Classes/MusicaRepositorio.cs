@@ -9,32 +9,32 @@ namespace CAD.Musicas.Classes
         private List<Musica> listaMusica =  new List<Musica>();
         public void Atualizar(int id, Musica entidade)
         {
-            throw new NotImplementedException();
+            listaMusica[id] = entidade;
         }
 
         public void Excluir(int id)
         {
-            throw new NotImplementedException();
+            listaMusica[id].Excluir();
         }
 
         public void Insere(Musica entrada)
         {
-            throw new NotImplementedException();
+            listaMusica.Add(entrada);
         }
 
         public List<Musica> Lista()
         {
-            throw new NotImplementedException();
+            return listaMusica;
         }
 
         public int ProximoId()
         {
-            throw new NotImplementedException();
+            return listaMusica.Count;
         }
 
         public Musica RetornaPorId(int id)
         {
-            throw new NotImplementedException();
+            return listaMusica[id];
         }
     }
 }
