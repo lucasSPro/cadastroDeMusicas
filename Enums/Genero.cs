@@ -3,20 +3,20 @@ namespace CAD.Musicas
     public enum Genero
     {
         Blues = 1,
-        Country = 1,
-        EletrOnica = 1,
-        Gospel = 1,
-        HipHop = 1,
-        Jazz = 1,
-        MPB = 1,
-        MUsicaclAssica = 1,
-        Pagode = 1,
-        Pop = 1,
-        Rap = 1,
-        Reggae = 1,
-        Rock = 1,
-        Samba = 1,
-        Sertanejo = 1
+        Country = 2,
+        EletrOnica = 3,
+        Gospel = 4,
+        HipHop = 5,
+        Jazz = 6,
+        MPB = 7,
+        MUsicaclAssica = 8,
+        Pagode = 9,
+        Pop = 10,
+        Rap = 12,
+        Reggae = 13,
+        Rock = 14,
+        Samba = 15,
+        Sertanejo = 16
     }
 }
 
