@@ -80,15 +80,15 @@ namespace CAD.Musicas
             Console.Write("Digite o ano de lançamento: ");
             int entradaAno =  int.Parse(Console.ReadLine());
 
-            Console.Write("Digite um trecho da musica: ");
-            string entradaDescricao =  Console.ReadLine();
+            Console.Write("Digite o artista da Musica: ");
+            string entradaArtista =  Console.ReadLine();
 
             Musica novaMusica = new Musica(
                 Id: repositorio.ProximoId(),
                 genero: (Genero)entradaGenero,
                 nome: entradaNome,
                 ano: entradaAno,
-                descricao: entradaDescricao
+                artista: entradaArtista
             );
             repositorio.Insere(novaMusica);
         }

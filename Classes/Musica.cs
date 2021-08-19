@@ -6,14 +6,14 @@ namespace CAD.Musicas
     {
         private Genero Genero { get; set; }
         private string Nome { get; set; }
-        private string Descricao { get; set; }
+        private string Artista { get; set; }
         private int Ano { get; set; }
         private bool Excluido {get;set;}
-        public Musica(int Id, Genero genero, string nome, string descricao, int ano)
+        public Musica(int Id, Genero genero, string nome, string artista, int ano)
         {
             this.Genero = genero;
             this.Nome = nome;
-            this.Descricao = descricao;
+            this.Artista = artista;
             this.Ano = ano;
             this.Excluido = false;
         }
@@ -23,7 +23,7 @@ namespace CAD.Musicas
             string retorno = "";
             retorno += "Gênero :" + this.Genero + Environment.NewLine;
             retorno += "Nome :" + this.Nome + Environment.NewLine;
-            retorno += "Artista :" + this.Descricao + Environment.NewLine;
+            retorno += "Artista :" + this.Artista + Environment.NewLine;
             retorno += "Ano de lançamento :" + this.Ano;
             return retorno;
         }
