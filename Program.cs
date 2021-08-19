@@ -50,7 +50,31 @@ namespace CAD.Musicas
             }
         }
         private static void InserirMusica(){
+            Console.WriteLine("Cadastrar nova musica");
+
+            foreach(int i in Enum.GetValues(typeof(Genero))){
+                Console.WriteLine("{0} - {1}", i , Enum.GetName(typeof(Genero), i));
+            }
+            Console.Write("Digite o número do gênero entre as opções acima: ");
+            int entradaGenero =  int.Parse(Console.ReadLine());
             
+            Console.Write("Digite o nome da Música: ");
+            string entradaNome =  Console.ReadLine();
+
+            Console.Write("Digite o ano de lançamento: ");
+            int entradaAno =  int.Parse(Console.ReadLine());
+
+            Console.Write("Digite um trecho da musica: ");
+            string entradaDescricao =  Console.ReadLine();
+
+            Musica novaMusica = new Musica(
+                Id: repositorio.ProximoId(),
+                genero: (Genero)entradaGenero,
+                nome: entradaNome,
+                ano: entradaAno,
+                descricao: entradaDescricao
+            );
+            repositorio.Insere(novaMusica);
         }
         private static void AtualizarMusica(){
 
