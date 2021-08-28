@@ -129,7 +129,11 @@ namespace CAD.Musicas
             repositorio.Excluir(indiceMusica);
         }
         private static void VisualizaMusica(){
+            Console.Write("Digite o id da Musica: ");
+            int indiceMusica =  int.Parse(Console.ReadLine());
 
+            var musica = repositorio.RetornaPorId(indiceMusica);
+            Console.WriteLine(musica);
         }
     }
 }
