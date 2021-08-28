@@ -123,7 +123,10 @@ namespace CAD.Musicas
             repositorio.Atualizar(indiceMusica, novaMusica);
         }
         private static void ExcluirMusica(){
-
+            Console.Write("Digite o id da Musica: ");
+            int indiceMusica = int.Parse(Console.ReadLine());
+            
+            repositorio.Excluir(indiceMusica);
         }
         private static void VisualizaMusica(){
 
