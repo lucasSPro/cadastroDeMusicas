@@ -62,7 +62,12 @@ namespace CAD.Musicas
                 Console.WriteLine("Nenhme musica cadastrada.");
             }
             foreach(var musica in lista){
-                Console.WriteLine("#ID {0}: - {1}", musica.retornaIdMusica(), musica.RetornaNomeMusica());
+                var excluido =  musica.retornaExcluido();
+                Console.WriteLine("#ID {0}: - {1} - {2}", 
+                musica.retornaIdMusica(), 
+                musica.RetornaNomeMusica(),
+                (excluido ? "**Excluido**" :  "")
+                );
             }
         }
         private static void InserirMusica(){
